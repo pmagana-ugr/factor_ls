@@ -16,7 +16,7 @@ def calculo_ls(m, n, a_e, sin_theta):
     Returns:
         Factor LS
     """
-    ls = (m + 1) * (a_e / 22.13) ** m * (sin_theta / 0.0896) ** n
+    ls = (m + 1) * (a_e / 22.13)**m * (sin_theta / 0.0896)**n
 
     return ls
 
