@@ -1,3 +1,3 @@
-# Cálculo del fáctor LS dentro de USLE
+# Cálculo del fáctor LS
 
-![img](http://latex.codecogs.com/svg.latex?LS%3D%28m%2B1%29%5Ctimes%5Cleft%28%5Cfrac%7BA_e%7D%7B22.13%7D%5Cright%29%5Em%5Ctimes%5Cleft%28%5Cfrac%7Bsin%5Ctheta%7D%7B0.896%7D%5Cright%29%5En)
+Factor de relieve de la Ecuación Universal de Pérdidas de Suelos (USLE), la herramienta más utilizada para estimar las pérdidas de suelo ocasionadas por la erosión hídrica de tipo laminar o en regueros de pequeña entidad.
