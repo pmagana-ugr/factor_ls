@@ -1,6 +1,3 @@
-# coding: utf-8
-from __future__ import division
-
 import matplotlib.pyplot as plt
 from osgeo import gdal
 import rasterio

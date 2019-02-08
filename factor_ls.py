@@ -1,6 +1,3 @@
-# coding: utf-8
-from __future__ import division
-
 import numpy as np
 
 
@@ -66,7 +63,7 @@ def calculo_b(aspect, resolucion):
         Longitud efectiva de curva de nivel
     """
     # Conversion a radianes
-    aspect_rad = aspect * np.pi/180
+    aspect_rad = aspect * np.pi / 180
 
     sin_rad = np.sin(aspect_rad)
     cos_rad = np.cos(aspect_rad)
@@ -89,7 +86,7 @@ def calculo_sin_theta(slope):
     Returns:
         Seno de la pendiente en grados
     """
-    slope_rad = slope * np.pi/180
+    slope_rad = slope * np.pi / 180
 
     sin_theta = np.sin(slope_rad)
 

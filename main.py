@@ -1,9 +1,5 @@
-# coding: utf-8
-from __future__ import division
-
 import factor_ls
 import raster
-
 
 # Resolucion de celda
 resolucion = 5
@@ -23,7 +19,10 @@ flowacc, perfil_flowacc = raster.cargar_capa('flowacc.tif')
 
 # Calculo de LS
 a_e = factor_ls.calculo_a_e(resolucion, flowacc, aspect)
+raster.guardar_capa(a_e, 'a_e.tif', perfil_aspect)
+
 sin_theta = factor_ls.calculo_sin_theta(slope)
+raster.guardar_capa(sin_theta, 'sin_theta.tif', perfil_aspect)
 
 ls = factor_ls.calculo_ls(m, n, a_e, sin_theta)
 
