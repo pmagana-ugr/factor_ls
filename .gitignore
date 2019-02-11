@@ -1,4 +1,5 @@
 *.tif
+*.tif.aux.xml
 
 ### macOS template
 # General
