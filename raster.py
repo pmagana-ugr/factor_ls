@@ -23,17 +23,18 @@ def calcular_aspect(mde, aspect):
     gdal.DEMProcessing(aspect, mde, 'aspect')
 
 
-def cargar_capa(raster):
+def cargar_capa(raster, id_capa=1):
     """Carga los datos contenido en un raster
 
     Args:
         raster: nombre del archivo con el raster de lectura
+        id_capa: identificador de la capa
 
     Returns:
         Datos del raster y perfil del raster
     """
     contenido_raster = rasterio.open(raster)
-    capa = contenido_raster.read(1)
+    capa = contenido_raster.read(id_capa, masked=True)
     perfil = contenido_raster.profile
     contenido_raster.close()
 
